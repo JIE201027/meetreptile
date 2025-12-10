@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@400;700&family=Lato:wght@400;700&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.noto-sans-tc-regular {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-sans-tc-bold {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    scroll-padding-top: 7rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+header {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header img {
+    padding: 10px 0px;
+    flex: 1 1 250px;
+    max-width: 250px;
+    height: auto;
+}
+
+main {
+    background-color: #d7d7d733;
+    padding: 30px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    main {
+        padding: 10px 10px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    main {
+        padding: 30px 50px;
+    }
+}
+
+main section {
+    padding: 10px;
+}
+
+section.左邊 {
+    flex: 3 1 400px;
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:1368px) {
+    section.左邊 {
+        flex: 3 1 100%;
+    }
+}
+
+section.左邊 img {
+    width: 100%;
+}
+
+section.右邊 {
+    flex: 1 1 250px;
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:1368px) {
+    section.右邊 {
+        flex: 1 1 250px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    border-top: 1px solid #00000020;
+    border-bottom: 1px solid #00000020;
+    z-index: 1;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width:399px) {
+    nav {
+        margin: auto;
+        height: 50px;
+    }
+}
+
+nav div {
+    margin-top: 33px;
+    margin-left: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+@media only screen and (max-width:599px) {
+    nav ul {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width:600px)and (max-width:960px) {
+    nav ul {
+        margin: auto;
+    }
+}
+
+nav ul li {
+    padding: 30px 50px 30px 50px;
+}
+
+@media only screen and (max-width:399px) {
+    nav ul li {
+        padding: 15px 10px 0px 10px;
+    }
+}
+
+@media (min-width:400px)and (max-width:499px) {
+    nav ul li {
+        padding: 10px 10px 0px 10px;
+        position: relative;
+        bottom: -10px;
+    }
+}
+
+@media (min-width:500px)and (max-width:599px) {
+    nav ul li {
+        padding: 10px 10px 0px 10px;
+        position: relative;
+        bottom: -10px;
+    }
+}
+
+@media (min-width:600px)and (max-width:960px) {
+    nav ul li {
+        padding: 20px;
+        position: relative;
+        left: 40px;
+    }
+}
+
+nav ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width:599px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+nav ul li a:hover {
+    color: rgb(100, 100, 100);
+}
+
+div.資訊 h1 {
+    position: relative;
+    top: -25px;
+    left: 20px;
+    padding-bottom: 20px;
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:1368px) {
+    div.資訊 h1 {
+        top: -25px;
+        left: 20px;
+    }
+}
+
+div.資訊 h3 {
+    position: relative;
+    top: -25px;
+    padding-bottom: 20px;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    div.資訊 h3 {
+        padding-right: 20px;
+        top: -25px;
+        left: 20px;
+    }
+}
+
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    div.資訊 h3 {
+        padding-right: 20px;
+        top: -25px;
+        left: 20px;
+    }
+}
+
+
+div.資訊 p {
+    padding: 10px 10px 0px 10px;
+}
+
+div.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* btn 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    div.btn {
+        padding-top: 0px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.btn-1 {
+    padding: 10px 120px;
+    border-radius: 10px;
+    color: #00afff;
+    text-decoration: none;
+    border: 1px solid #00afff;
+    transition: all 0.5s;
+}
+
+/* btn 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    .btn-1 {
+        display: block;
+        padding: 10px 150px;
+    }
+}
+
+.btn-1:hover {
+    border: 1px solid #fff;
+    background-color: #00afff;
+    color: #fff;
+}
+
+.btn-2 {
+    padding: 10px 120px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #00afff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width:599px) {
+    .btn-2 {
+        display: none;
+    }
+}
+
+@media (min-width:600px)and (max-width:1284px) {
+    .btn-2 {
+        display: none;
+    }
+}
+
+@media (min-width:1285px)and (max-width:1368px) {
+    .btn-2 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.btn-2:hover {
+    border: 1px solid #00afff;
+    background-color: #fff;
+    color: #00afff;
+}
+
+.btn-3 {
+    margin-top: 30px;
+    padding: 10px 200px;
+    border-radius: 10px;
+    color: #00afff;
+    text-decoration: none;
+    border: 1px solid #00afff;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width:359px) {
+    .btn-3 {
+        padding: 10px 90px;
+    }
+}
+
+@media only screen and (min-width:360px)and (max-width:399px) {
+    .btn-3 {
+        padding: 10px 100px;
+    }
+}
+
+
+@media only screen and (min-width:400px)and (max-width:599px) {
+    .btn-3 {
+        padding: 10px 120px;
+    }
+}
+
+@media only screen and (min-width:600px)and (max-width:960px) {
+    .btn-3 {
+        padding: 10px 200px;
+        position: relative;
+        right: 0px;
+    }
+}
+
+.btn-3:hover {
+    border: 1px solid #fff;
+    background-color: #00afff;
+    color: #fff;
+}
+
+.btn-4 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 50px;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px 120px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #00afff;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:450px) {
+    .btn-4 {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:699px) {
+    .btn-4 {
+        width: 90%;
+    }
+}
+
+.btn-4:hover {
+    border: 1px solid #00afff;
+    background-color: #fff;
+    color: #00afff;
+}
+
+@media only screen and (min-width:1284px) {
+    button {
+        display: none;
+    }
+}
+
+.鬆獅蜥 {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.鬆獅蜥 img {
+    position: relative;
+    flex: 1 1 150px;
+    max-width: 150px;
+    height: auto;
+}
+
+section.紅紅的故事 {
+    background-color: #d7d7d733;
+    padding: 10px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    section.紅紅的故事 {
+        padding: 10px 20px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    section.紅紅的故事 {
+        padding: 30px 20px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:960px)and (max-width:1367px) {
+    section.紅紅的故事 {
+        padding: 30px 80px;
+    }
+}
+
+section.資訊接露 {
+    background-color: #d7d7d733;
+    padding: 10px 80px;
+    position: relative;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    section.資訊接露 {
+        padding: 10px 20px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    section.資訊接露 {
+        padding: 30px 50px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:960px)and (max-width:1367px) {
+    section.資訊接露 {
+        padding: 30px 70px;
+    }
+}
+
+section.我們的承諾 {
+    background-color: #d7d7d733;
+    padding: 10px 80px;
+    position: relative;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    section.我們的承諾 {
+        padding: 10px 20px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    section.我們的承諾 {
+        padding: 30px 50px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:960px)and (max-width:1367px) {
+    section.我們的承諾 {
+        padding: 30px 70px;
+    }
+}
+
+section.關於我們 {
+    background-color: #d7d7d733;
+    padding: 10px 80px;
+    position: relative;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    section.關於我們 {
+        padding: 10px 20px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    section.關於我們 {
+        padding: 30px 50px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:960px)and (max-width:1367px) {
+    section.關於我們 {
+        padding: 30px 70px;
+    }
+}
+
+section div {
+    margin: 20px 0px;
+}
+
+section.紅紅的故事 p {
+    line-height: 35px;
+}
+
+@media only screen and (max-width:768px) {
+    section.紅紅的故事 p {
+        line-height: 28px;
+    }
+}
+
+#story {
+    font-size: 30px;
+    padding: 40px 0px 0px 100px;
+    display: flex;
+    background-color: #d7d7d733;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    #story {
+        padding: 20px 0px 10px 20px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    #story {
+        padding: 40px 0px 3px 20px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:961px)and (max-width:1368px) {
+    #story {
+        padding: 40px 0px 0px 70px;
+    }
+}
+
+.story-左邊 {
+    flex: 2 1 500px;
+}
+
+.story-左邊 img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 20px;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    .story-左邊 img {
+        left: 0px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:960px) {
+    .story-左邊 img {
+        left: 0px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:961px)and (max-width:1367px) {
+    .story-左邊 img {
+        left: 0px;
+    }
+}
+
+.story-右邊 {
+    flex: 2 1 400px;
+    padding-right: 50px;
+    position: relative;
+    top: 200px;
+    left: 50px;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    .story-右邊 {
+        flex: 2 1 200px;
+        position: relative;
+        padding-right: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:600px)and (max-width:840px) {
+    .story-右邊 {
+        flex: 2 1 300px;
+        position: relative;
+        top: 0px;
+        left: 30px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:840px)and (max-width:940px) {
+    .story-右邊 {
+        flex: 2 1 400px;
+        position: relative;
+        top: 0px;
+        left: 30px;
+    }
+}
+
+/* 平板版樣式 */
+@media (min-width:940px)and (max-width:1367px) {
+    .story-右邊 {
+        flex: 2 1 500px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    }
+}
+
+#information {
+    font-size: 30px;
+    padding: 0px 0px 30px 20px;
+}
+
+.資訊接露 h3 {
+    font-size: 20px;
+    padding: 0px 0px 10px 20px;
+}
+
+.資訊接露 ul {
+    padding: 10px 0px 20px 40px;
+}
+
+.資訊接露 ul li {
+    line-height: 30px;
+}
+
+.資訊接露 p {
+    line-height: 28px;
+    padding: 0px 0px 10px 20px;
+}
+
+.資訊接露-4 ul:last-child {
+    padding: 10px 0px 0px 40px;
+}
+
+table {
+    margin: 20px auto 40px auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+thead,
+tfoot {
+    background-color: #d5d5d5;
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 10px 20px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#commit {
+    font-size: 30px;
+    padding: 0px 0px 30px 20px;
+}
+
+.我們的承諾 h3 {
+    font-size: 20px;
+    padding: 0px 0px 10px 20px;
+}
+
+.我們的承諾 ul {
+    padding: 10px 0px 10px 40px;
+}
+
+.我們的承諾 ul li {
+    line-height: 30px;
+}
+
+.我們的承諾-5 ul:last-child {
+    padding: 10px 0px 0px 40px;
+}
+
+
+.我們的承諾 p {
+    line-height: 28px;
+    padding: 0px 0px 10px 20px;
+}
+
+#about {
+    font-size: 30px;
+    padding: 0px 0px 30px 20px;
+}
+
+.關於我們 h3 {
+    font-size: 20px;
+    padding: 0px 0px 10px 20px;
+}
+
+.關於我們 ul {
+    padding: 10px 0px 10px 40px;
+}
+
+.關於我們 ul li {
+    line-height: 30px;
+}
+
+.關於我們 p {
+    line-height: 28px;
+    padding: 0px 0px 10px 20px;
+}
+
+.關於我們 img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #000000;
+}
+
+.頁尾 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-list li a {
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:599px) {
+    .footer-list li a {
+        padding: 10px;
+    }
+}
+
+.footer-list li a:hover {
+    color: rgb(214, 214, 214);
+}
+
+hr {
+    color: #ffffff;
+}
+
+.footer-text {
+    padding: 20px 0px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+@media only screen and (max-width:1283px) {
+    .footer-text {
+        margin-bottom: 50px;
+    }
+}
+
+strong {
+    background-image: linear-gradient(180deg, transparent 50%, #fdda5a 0) !important;
+}
+
+.ScrollTopBtn {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: #00afff;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* 手機版樣式 */
+@media only screen and (max-width:1200px) {
+    .ScrollTopBtn {
+        right: 10px;
+        bottom: 15px;
+    }
+}
+
+/* 手機版樣式 */
+@media only screen and (min-width:1201px) {
+    .ScrollTopBtn {
+        right: 30px;
+        bottom: 20px;
+    }
+}
